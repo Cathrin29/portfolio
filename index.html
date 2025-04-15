@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i> 
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1>Hi, I'm <span>Cathrin Vinslet</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2025-03-22 at 6.42.14 PM.jpeg" alt="my pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Cathrin Vinslet, a passionate web developer with a background in biomedical engineering. I specialize in front-end development, creating user-friendly websites with HTML, CSS, and JavaScript, and have a solid understanding of Java.
+                       With strong problem-solving skills and adaptability, I’m eager to learn and explore new technologies. I'm currently seeking opportunities in web development and software development to apply my skills and creativity in building impactful solutions.</p>
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li>JAVA</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVA SCRIPT</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>B.E-BIOMEDICAL ENGINEERING CGPA-8.81%</span><br>SriShakthi Institute of Engineering and Technology</li>
+                            <li><span>HSC-STATE BOARD-89%</span><br>St.Mary's girls Higher secondary school
+                            </li>
+                            <li><span>SSLC-STATE BOARD-86.4%</span><br>R.C.High School</li>
+                            
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------projects---------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Vehicle Rental Management System</h2>
+                    <p>The Vehicle Rental Management System is a simple console-based application developed in Java that allows users to manage vehicle rentals efficiently. This system helps in adding, listing, renting, and returning vehicles with an easy-to-use interface.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-clone"></i>
+                    <h2>Netflix Clone - A Responsive Streaming Website</h2>
+                    <p>The Netflix Clone is a front-end web project built using HTML and CSS, designed to replicate the look and feel of the original Netflix homepage. This project focuses on responsive design, clean UI, and smooth layout structure, making it an excellent example of web development using only HTML and CSS.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Personal Portfolio Website</h2>
+                    <p>The Personal Portfolio Website is a fully responsive web project built using HTML, CSS, and JavaScript, designed to showcase personal skills, projects. This portfolio serves as a digital resume, allowing visitors to learn more about your work and expertise in an interactive and visually appealing way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------contact---------------->
+    <div id="contact">
+        <div class="container">
+          <h1 clss="sub-title">Contact Me</h1>
+            <div class="contact-list">
+             <tr>
+                <td>
+                 <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>cathrinvinslet@gmail.com</p>   
+                </div>
+                </td>
+                <td>
+                <div>
+                    <i class="fa-solid fa-square-phone"></i>
+                    <p>8778847180</p>
+            
+                </div>
+                </td>
+                <td>
+                <div>
+                    <a href="https://www.linkedin.com/in/cathrinvinslet"><i class="fa-brands fa-linkedin"></i>
+                    
+                </div>
+                </td>
+                <td>
+                <div>
+                   <a href="https://github.com/Cathrin29"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                </td>
+            </tr>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Cathrin Vinslet. All rights reserved.</p>
+    
+        </div>
+    </div>
+    
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontains=document.getElementsByClassName("tab-contains");
+        function opentab(tabname){
+            for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains){
+              tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+        
+    </body>
+    </html>
+    
+    
